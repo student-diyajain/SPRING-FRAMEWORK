@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+ xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+ xmlns:context="http://www.springframework.org/schema/context"  
+ xmlns:util="http://www.springframework.org/schema/util"    
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd
+ http://www.springframework.org/schema/util
+ http://www.springframework.org/schema/util/spring-util.xsd">
+ 
+
+<context:component-scan base-package="com.springcore.stereotype"/>
+   
+ <!-- Standalone Set -->
+ <util:set set-class="java.util.HashSet" id="phones">
+ <value>1234</value>
+ <value>567</value>
+ <value>8910</value>
+ <value>786</value>
+ <value>1294</value>
+ <value>5670</value>
+ <value>8980</value>
+ <value>786</value>
+ </util:set>
+   </beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

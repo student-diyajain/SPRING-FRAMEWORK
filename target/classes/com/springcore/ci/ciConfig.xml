@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p" 
+ xmlns:c="http://www.springframework.org/schema/c"      
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean class="com.springcore.ci.Certi" name="cref1" c:cName="java with dsa certificate" />
+
+<bean class="com.springcore.ci.Certi" name="cref2" c:cName="c++ with dsa certificate" />
+
+<bean class="com.springcore.ci.Certi" name="cref3" c:cName="python with dsa certificate" />
+
+
+   <bean class="com.springcore.ci.Person" name="Person1">
+ <!--First Parameter-->
+<constructor-arg>
+<value>diya</value>
+</constructor-arg>
+
+ <!--Second Parameter-->
+<constructor-arg>
+<value>1234</value>
+</constructor-arg>
+
+ <!--Third Parameter-->
+<constructor-arg>
+<ref bean ="cref1"/>
+</constructor-arg>
+  </bean>
+  
+   <bean class="com.springcore.ci.Person" name="Person2">
+ <!--First Parameter-->
+<constructor-arg value="charu"/>
+
+ <!--Second Parameter-->
+<constructor-arg value="98"/>
+
+ <!--Third Parameter-->
+<constructor-arg ref="cref2"/>
+   </bean>
+   
+   <bean class="com.springcore.ci.Person" name="Person3" c:_0="riyajain" c:_1="34" c:_2-ref="cref3"/>
+
+
+  
+
+</beans>

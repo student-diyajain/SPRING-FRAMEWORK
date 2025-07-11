@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p"      
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <!-- first bean -->
+   <bean class="com.springcore.ci.Emp" name="Emp1">
+ <!--First property-->
+ <constructor-arg value="priyanka"/>
+ 
+ <!--Second property-->
+ <constructor-arg><list>
+ <value>Delhi</value>
+ <value>mumbai</value>
+ <value>chennai</value>
+ <value>Delhi</value>
+ <null/>
+ </list></constructor-arg>
+
+ <!--Third property-->
+ <constructor-arg> <set>
+ <value>1234</value>
+ <value>567</value>
+ <value>8910</value>
+ <value>786</value>
+  <value>1294</value>
+ <value>5670</value>
+ <value>8980</value>
+ <value>786</value>
+ </set></constructor-arg>
+
+ 
+ <!--Fourth property-->
+ <constructor-arg> <map>
+ <entry key="java" value="1.2months"/>
+ <entry key="python" value="3.2months"/>
+ <entry key="dsa" value="8.2months"/>
+ </map></constructor-arg>
+ 
+ 
+ <!--Fifth property-->
+ <constructor-arg> <props>
+ <prop key="science">99</prop>
+ <prop key="math">98</prop>
+ <prop key="physics">100</prop>
+ </props></constructor-arg>
+
+   </bean>
+
+</beans>
